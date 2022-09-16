@@ -1,0 +1,28 @@
+var data = {
+    'PropertyA': 1,
+    'PropertyB': 2,
+    'PropertyC': 3
+};
+var propertyName = "someProperty";
+var propertyValue = "someValue";
+
+Either:
+
+data[propertyName] = propertyValue;
+
+or
+
+eval("data." + propertyName + " = '" + propertyValue + "'");
+
+
+var data = {
+    'PropertyA': 1,
+    'PropertyB': 2,
+    'PropertyC': 3
+};
+
+data["PropertyD"] = 4;
+
+// dialog box with 4 in it
+alert(data.PropertyD);
+alert(data["PropertyD"]);
